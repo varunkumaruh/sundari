@@ -205,7 +205,7 @@
         const videoResponse = await fetch('https://api-inference.huggingface.co/models/stabilityai/stable-video-diffusion', {
           method: 'POST',
           headers: {
-            'Authorization': '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',
+            'Authorization': 'Bearer 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',
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({ prompt, style, duration: 5 })
@@ -219,7 +219,7 @@
         const audioResponse = await fetch('https://api-inference.huggingface.co/models/facebook/audiocraft', {
           method: 'POST',
           headers: {
-            'Authorization': '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',
+            'Authorization': 'Bearer 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',
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({ prompt, type: 'ambient' })
