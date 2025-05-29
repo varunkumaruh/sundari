@@ -6,7 +6,7 @@
   <script type="module">
     import { InferenceClient } from "https://cdn.skypack.dev/@huggingface/inference";
 
-    const client = new InferenceClient("Bearer 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"); // 🔁 Replace with your HF token
+    const client = new InferenceClient("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"); // 🔁 Replace with your HF token
 
     window.generateVideo = async function () {
       const prompt = document.getElementById("prompt").value;
